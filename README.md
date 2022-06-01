@@ -4,7 +4,9 @@ Coded in POSIX compliant shell it can run in OSX and Linux
 
 ## Usage
 ```console
-$ sh generate.sh [<LANGUAGE>]
+$ sh generate.sh install
+$ sh generate.sh update
+$ sh generate.sh template [<TEMPLATE NAME>]
 ```
 
 ## Supported Languages
