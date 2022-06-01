@@ -5,7 +5,12 @@ Coded in POSIX compliant shell it can run in OSX and Linux
 ## Usage
 ```console
 # bash generate.sh install
+# bash generate.sh uninstall
 # bash generate.sh update
+```
+For more a advanced description please refer to the man page
+```console
+$ man generate.sh
 ```
 
 ## Supported Languages
