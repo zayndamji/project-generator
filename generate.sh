@@ -13,7 +13,7 @@ if [ ! -d "/usr/local/share/projectgenerator/" ]
 then
   echo "Sorry, but you have not installed this software. Installing right now..."
   install
-  exit 1
+  exit 0
 fi
 
 if [ "$1" == "update" ]
