@@ -1,14 +1,13 @@
 #!/bin/bash
 
-<<nodejs
-NODEJS="console.log(\"Hello World\");"
-
-if [ "$1" == "nodejs" ]
+if [ "$1" == "install" ]
 then
-  echo "$NODEJS" > "$PWD/app.js"
-
-else
-  echo "You have not put in an option!"
-
+  cd /usr/local/share/
+  if [ -d "projectgenerator/" ]
+  then
+    echo "Deleted lib folder."
+    sudo rm -r projectgenerator/
+  fi
+  echo "Created lib folder."
+  sudo mkdir projectgenerator/
 fi
-nodejs
