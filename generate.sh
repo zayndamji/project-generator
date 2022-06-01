@@ -4,7 +4,7 @@
 # set -x
 
 # gets the current directory
-BASEDIR=$(pwd "$0")
+BASEDIR=$(dirname "$0")
 
 # check if root
 if [ "$EUID" -ne 0 ]
