@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<nodejs
 NODEJS="console.log(\"Hello World\");"
 
 if [ "$1" == "nodejs" ]
@@ -10,3 +11,4 @@ else
   echo "You have not put in an option!"
 
 fi
+nodejs
