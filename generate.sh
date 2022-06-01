@@ -1,10 +1,9 @@
 #!/bin/bash
 
-cd /usr/local/share/
-if [ ! -d "projectgenerator/" ]
+if [ ! -d "/usr/local/share/projectgenerator/" ]
 then
   echo "Sorry, but you have not installed this software. Installing right now..."
-  sudo mkdir projectgenerator/
+  sudo mkdir /usr/local/share/projectgenerator/
   echo "Created lib folder successfully."
   exit 1
 fi
