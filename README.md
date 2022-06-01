@@ -4,8 +4,8 @@ Coded in POSIX compliant shell it can run in OSX and Linux
 
 ## Usage
 ```console
-$ sh generate.sh install
-$ sh generate.sh update
+# bash generate.sh install
+# bash generate.sh update
 ```
 
 ## Supported Languages
