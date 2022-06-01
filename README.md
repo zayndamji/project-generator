@@ -12,5 +12,5 @@ $ generate.sh [<LANGUAGE>]
 and more comming soon!
 
 ## Authors
-Wolfdesroyer8 <desroyerwolf8@gmail.com>
-zaypers <NA>
+- Wolfdesroyer8 <desroyerwolf8@gmail.com>
+- zaypers <NA>
