@@ -18,4 +18,4 @@ None current supported.
 
 ## Authors
 - Wolfdesroyer8 <desroyerwolf8@gmail.com>
-- zaypers <NA>
+- zaypers <zaypers2000@gmail.com>
