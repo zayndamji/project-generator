@@ -24,7 +24,15 @@ install() {
     echo Created man directory
   fi
   cp "$BASEDIR/generate.sh.1" /usr/local/share/man/man1/
-  echo "Added manual page."
+  echo "Added man file."
+}
+
+# uninstalls the files
+uninstall() {
+  rm -r /usr/local/share/projectgenerator/
+  echo "Removed lib folder."
+  rm /usr/local/share/man/man1/generate.sh.1
+  echo "Removed man file."
 }
 
 # check if software is already installed, if not then starts installing
@@ -38,18 +46,13 @@ fi
 # updates library files to latest version
 if [ "$1" == "update" ]
 then
-  cd /usr/local/share/
-  rm -r projectgenerator/
-  echo "Removed lib folder."
+  uninstall
   install
 
 # uninstalls software from system
 elif [ "$1" == "uninstall" ]
 then
-  cd /usr/local/share/
-  rm -r projectgenerator/
-  rm man/man1/generate.sh.1
-  echo "Removed lib folder."
+  uninstall
   echo "Project generator has been uninstalled from your system."
 
 # basically useless command, only runs if software is installed
