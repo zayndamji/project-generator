@@ -24,7 +24,7 @@ install() {
     echo Created man directory
   fi
   cp "$BASEDIR/generate.sh.1" /usr/local/share/man/man1/
-  echo "Added man page"
+  echo "Added manual page."
 }
 
 # check id already installed, if not then installs
@@ -58,6 +58,6 @@ then
   echo "Sorry, but you have already installed this software. To update, use the 'update' command."
 
 else
-  echo "Sorry, but you have entered an incorrect argument"
+  echo "Sorry, but you have entered an incorrect argument."
 
 fi
