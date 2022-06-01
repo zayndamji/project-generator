@@ -20,7 +20,15 @@ if [ "$1" == "update" ]
 then
   cd /usr/local/share/
   sudo rm -r projectgenerator/
+  echo "Removed lib folder."
   install
+
+elif [ "$1" == "uninstall" ]
+then
+  cd /usr/local/share/
+  sudo rm -r projectgenerator/
+  echo "Removed lib folder."
+  echo "Project generator has been uninstalled from your system."
 
 elif [ "$1" == "install" ]
 then
