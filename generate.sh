@@ -1,10 +1,14 @@
 #!/bin/bash
 
+install() {
+  sudo mkdir /usr/local/share/projectgenerator/
+  echo "Created lib folder successfully."
+}
+
 if [ ! -d "/usr/local/share/projectgenerator/" ]
 then
   echo "Sorry, but you have not installed this software. Installing right now..."
-  sudo mkdir /usr/local/share/projectgenerator/
-  echo "Created lib folder successfully."
+  install
   exit 1
 fi
 
@@ -12,8 +16,7 @@ if [ "$1" == "update" ]
 then
   cd /usr/local/share/
   sudo rm -r projectgenerator/
-  sudo mkdir projectgenerator/
-  echo "Recreated lib folder successfully."
+  install
 
 elif [ "$1" == "install" ]
 then
