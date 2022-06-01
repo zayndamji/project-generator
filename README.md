@@ -1,6 +1,6 @@
 # Project Generator
 Generates project templates in many programming languages!  
-Coded in POSIX compliant shell so it can run in OSX and Linux
+Coded in POSIX compliant shell; can run on OSX and Linux.
 
 ## Usage
 ```console
@@ -8,7 +8,7 @@ Coded in POSIX compliant shell so it can run in OSX and Linux
 # bash generate.sh uninstall
 # bash generate.sh update
 ```
-For more a advanced description please refer to the man page
+For more a advanced description please refer to the man page.
 ```console
 $ man generate.sh
 ```
