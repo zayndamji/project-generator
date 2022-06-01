@@ -4,12 +4,12 @@ Coded in POSIX compliant shell it can run in OSX and Linux
 
 ## Usage
 ```console
-$ generate.sh [<LANGUAGE>]
+$ sh generate.sh [<LANGUAGE>]
 ```
 
 ## Supported Languages
 - Javascript
-and more comming soon!
+and more coming soon!
 
 ## Authors
 - Wolfdesroyer8 <desroyerwolf8@gmail.com>
