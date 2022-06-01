@@ -1,6 +1,6 @@
 # Project Generator
 Generates project templates in many programming languages!  
-Coded in POSIX compliant shell it can run in OSX and Linux
+Coded in POSIX compliant shell so it can run in OSX and Linux
 
 ## Usage
 ```console
