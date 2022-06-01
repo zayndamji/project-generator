@@ -18,6 +18,13 @@ install() {
   echo "Created lib folder."
   cp -r "$BASEDIR/templates/" /usr/local/share/projectgenerator/templates/
   echo "Added templates to lib folder."
+  if [ ! -d "/usr/local/share/man/man1" ]
+  then
+    mkdir /usr/local/share/man/man1.
+    echo Created man directory
+  fi
+  cp "$BASEDIR/generate.sh.1" /usr/local/share/man/man1/
+  echo "Added man page"
 }
 
 # check id already installed, if not then installs
@@ -41,6 +48,7 @@ elif [ "$1" == "uninstall" ]
 then
   cd /usr/local/share/
   rm -r projectgenerator/
+  rm man/man1/generate.sh.1
   echo "Removed lib folder."
   echo "Project generator has been uninstalled from your system."
 
