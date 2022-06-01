@@ -3,10 +3,10 @@
 # Makes it so all commands are printed good for debuging
 # set -x
 
-# gets the current directory
+# gets the directory of the shell script
 BASEDIR=$(dirname "$0")
 
-# check if root
+# check if user is root, if not, exits
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit 1
@@ -27,7 +27,7 @@ install() {
   echo "Added manual page."
 }
 
-# check id already installed, if not then installs
+# check if software is already installed, if not then starts installing
 if [ ! -d "/usr/local/share/projectgenerator/" ]
 then
   echo "Sorry, but you have not installed this software. Installing right now..."
@@ -35,7 +35,7 @@ then
   exit 0
 fi
 
-# reinstalls
+# updates library files to latest version
 if [ "$1" == "update" ]
 then
   cd /usr/local/share/
@@ -43,7 +43,7 @@ then
   echo "Removed lib folder."
   install
 
-# removes all files
+# uninstalls software from system
 elif [ "$1" == "uninstall" ]
 then
   cd /usr/local/share/
@@ -52,7 +52,7 @@ then
   echo "Removed lib folder."
   echo "Project generator has been uninstalled from your system."
 
-# installs
+# basically useless command, only runs if software is installed
 elif [ "$1" == "install" ]
 then
   echo "Sorry, but you have already installed this software. To update, use the 'update' command."
