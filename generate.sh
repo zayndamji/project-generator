@@ -9,7 +9,7 @@ BASEDIR=$(dirname "$0")
 # check if user is root, if not, exits
 if [ "$EUID" -ne 0 ]
 then
-  echo "Please run as root"
+  echo "Please run as root."
   exit 1
 fi
 
