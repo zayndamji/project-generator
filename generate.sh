@@ -1,8 +1,12 @@
 #!/bin/bash
 
+BASEDIR=$(dirname "$0")
+
 install() {
   sudo mkdir /usr/local/share/projectgenerator/
-  echo "Created lib folder successfully."
+  echo "Created lib folder."
+  sudo cp -r "$BASEDIR/templates/" /usr/local/share/projectgenerator/templates/
+  echo "Added templates to lib folder."
 }
 
 if [ ! -d "/usr/local/share/projectgenerator/" ]
