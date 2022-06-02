@@ -1,22 +1,9 @@
 #!/bin/bash
 
-# LIBDIR is where the library is located, BASEDIR is where the shell script is located
+# LIBDIR is where the library is located
 LIBDIR="/usr/local/share"
-BASEDIR=$(dirname "$BASH_SOURCE")
-
-# checks if user is root because commands to install need root access
-if [ "$EUID" -ne 0 ]
-then
-  echo "Please run as root."
-  exit 1
-fi
-
-# checks if project generator is already installed
-if [ -d "$LIBDIR/projectgenerator/" ]
-then
-  echo "Project generator has already been installed on your system."
-  exit 1
-fi
+# BASEDIR is where the shell script is located
+BASEDIR=$1
 
 # creates library folder
 mkdir "$LIBDIR/projectgenerator/"
