@@ -4,8 +4,8 @@ Coded in POSIX compliant shell; can run on OSX and Linux.
 
 ## Usage
 ```console
-$ sudo bash generate.sh install
-$ sudo bash generate.sh uninstall
+# sudo bash generate install
+# sudo bash generate uninstall
 ```
 For more a advanced description please refer to the man page.
 ```console
