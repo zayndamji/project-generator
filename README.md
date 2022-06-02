@@ -1,15 +1,15 @@
 # Project Generator
 Generates project templates in many programming languages!  
-Coded in POSIX compliant shell; can run on OSX and Linux.
+Coded in POSIX compliant shell; can run on OSX and Linux. WILL NOT WORK ON WINDOWS.
 
 ## Usage
 ```console
-# sudo bash generate install
-# sudo bash generate uninstall
+# sudo ./generate install
+# sudo ./generate uninstall
 ```
 For more a advanced description please refer to the man page.
 ```console
-$ man generate.sh
+$ man generate
 ```
 
 ## Supported Languages
