@@ -4,8 +4,8 @@ Coded in POSIX compliant shell; can run on OSX and Linux.
 
 ## Usage
 ```console
-$ bash install.sh
-$ bash uninstall.sh
+$ sudo bash install.sh
+$ sudo bash uninstall.sh
 ```
 For more a advanced description please refer to the man page.
 ```console
