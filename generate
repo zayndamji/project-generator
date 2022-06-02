@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# checks if user is root because commands to install need root access
-if [ "$EUID" -ne 0 ]
-then
-  echo "Please run as root."
-  exit 1
-fi
+checkroot() {
+  # checks if user is root because commands to install need root access
+  if [ "$EUID" -ne 0 ]
+  then
+    echo "Please run as root."
+    exit 1
+  fi
+}
 
 # LIBDIR is where the library is located
 LIBDIR="/usr/local/share"
@@ -14,6 +16,7 @@ BASEDIR=$(dirname "$BASH_SOURCE")
 
 if [ "$1" == "install" ]
 then
+  checkroot
   if [ -d "$LIBDIR/projectgenerator/" ]
   then
     echo "The project already exists."
@@ -24,6 +27,7 @@ then
 
 elif [ "$1" == "uninstall" ]
 then
+  checkroot
   if [ ! -d "$LIBDIR/projectgenerator/" ]
   then
     echo "The project does not exist."
