@@ -4,9 +4,8 @@ Coded in POSIX compliant shell; can run on OSX and Linux.
 
 ## Usage
 ```console
-# bash generate.sh install
-# bash generate.sh uninstall
-# bash generate.sh update
+$ bash install.sh
+$ bash uninstall.sh
 ```
 For more a advanced description please refer to the man page.
 ```console
