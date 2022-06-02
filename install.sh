@@ -1,3 +1,5 @@
+#!/bin/bash
+
 LIBDIR="/usr/local/share"
 BASEDIR=$(dirname "$BASH_SOURCE")
 
