@@ -1,12 +1,14 @@
 # Project Generator
 Generates project templates in many programming languages!  
-Coded in POSIX compliant shell; can run on OSX and Linux. WILL NOT WORK ON WINDOWS.
+Coded in POSIX compliant shell; can run on OSX and Linux.
+WILL NOT WORK ON WINDOWS.
 
 ## Installation
 ```console
-# sudo ./installtool install
-# sudo ./installtool uninstall
+# sudo ./install
+# sudo ./uninstall
 ```
+Once done installing, you may delete the folder that these installation tools are located in.
 
 ## Supported Languages
 None current supported.
