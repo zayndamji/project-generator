@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# checks if user is root because commands to install need root access
+if [ "$EUID" -ne 0 ]
+then
+  echo "Please run as root."
+  exit 1
+fi
+
+# BASEDIR is where the shell script is located
+BASEDIR=$(dirname "$BASH_SOURCE")
+
+# checks if project does not exist
+if [ ! -d "/usr/local/share/projectgenerator/" ]
+then
+  echo "The project does not exist."
+  exit 1
+fi
+
+# removes library folder
+rm -r "/usr/local/share/projectgenerator/"
+echo "Removed lib folder."
