@@ -2,14 +2,10 @@
 Generates project templates in many programming languages!  
 Coded in POSIX compliant shell; can run on OSX and Linux. WILL NOT WORK ON WINDOWS.
 
-## Usage
+## Installation
 ```console
-# sudo ./generate install
-# sudo ./generate uninstall
-```
-For more a advanced description please refer to the man page.
-```console
-$ man generate
+# sudo ./installtool install
+# sudo ./installtool uninstall
 ```
 
 ## Supported Languages
