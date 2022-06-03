@@ -4,9 +4,10 @@ Coded in POSIX compliant shell; can run on OSX and Linux.
 WILL NOT WORK ON WINDOWS.
 
 ## Installation
+Run installation commands as root, by putting ```sudo``` in front of it.
 ```console
-# sudo ./install
-# sudo ./uninstall
+# ./install
+# ./uninstall
 ```
 Once done installing, you may delete the folder that these installation tools are located in.
 
