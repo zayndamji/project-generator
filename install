@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# checks if project already exists
+if [ -d ~/.config/ProjectGenerator/ ]
+then
+  echo "The project already exists."
+  exit 1
+fi
+
+# creates library folder
+mkdir ~/.config/ProjectGenerator/
+echo "Created lib folder."
+mkdir ~/.config/ProjectGenerator/templates/
+echo "Created templates folder."
