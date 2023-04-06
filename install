@@ -9,6 +9,4 @@ fi
 
 # creates library folder
 mkdir ~/.config/ProjectGenerator/
-echo "Created lib folder."
-mkdir ~/.config/ProjectGenerator/templates/
-echo "Created templates folder."
+git clone git@github.com:zayndamji/project-generator.git ~/.config/ProjectGenerator/source/
