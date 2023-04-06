@@ -1,5 +1,8 @@
 #!/bin/bash
 
+GIT_URL=github.com:zayndamji/project-generator.git
+CONFIG_DIR=~/.config/ProjectGenerator
+
 # checks if project already exists
 if [ -d ~/.config/ProjectGenerator/ ]
 then
@@ -8,5 +11,5 @@ then
 fi
 
 # creates library folder
-mkdir ~/.config/ProjectGenerator/
-git clone git@github.com:zayndamji/project-generator.git ~/.config/ProjectGenerator/source/
+mkdir $CONFIG_DIR
+git clone git@$GIT_URL $CONFIG_DIR/source/
